@@ -22,7 +22,18 @@ co(function * () {
     if(!global.Element) global.Element = window.Element;
 
     // Now that env setup, we can require Chartist
-    var Chartist = require('chartist');
+    // var Chartist = require('chartist');
+    var vm = require('vm')
+    var fs = require('fs')
+    var code = fs.readFileSync(require.resolve('chartist'), 'utf8');
+    var context = vm.createContext(global);
+    vm.runInContext(code, context);
+    var Chartist = context.Chartist;
+
+    // TODO figure out // only works when using global as context ...
+    console.dir(global, {depth: 0})
+    console.dir(context, {depth: 0})
+    console.log('context === global?', context === global)
 
     // Load external deps
     var css = fs.readFileSync(path.resolve(__dirname, 'node_modules/chartist/dist/chartist.min.css'), 'utf8');
@@ -45,11 +56,12 @@ co(function * () {
     var chart = new Chartist.Line(container, data, options);
     chart.on('created', () => {
       var html = container.innerHTML;
-      console.log(`${style}${html}`);
+      console.log('chart created?', html.search('svg') !== -1);
+      // console.log(`${style}${html}`);
     });
 
     // cleanup
-    chart = chart.detach();
+    // chart = chart.detach();
   }
   catch (error) { console.error(error.stack); }
 });
