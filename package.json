@@ -2,16 +2,27 @@
   "name": "chartist-x",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
   "dependencies": {
+    "@panosoft/ramda-utils": "^0.2.0",
+    "brfs": "^1.4.1",
     "chartist": "^0.9.4",
+    "chartist-plugin-axistitle": "0.0.1",
     "co": "^4.6.0",
     "jsdom": "^7.0.2",
-    "matchmedia": "^0.1.2"
+    "matchmedia": "^0.1.2",
+    "promisify-node": "^0.2.1",
+    "ramda": "^0.18.0",
+    "underscore.string": "^3.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "author": "",
   "license": "MIT"

@@ -1,0 +1,141 @@
+.ct-legend {
+  margin-top: 1em;
+}
+.ct-legend .ct-variable {
+  display: inline-block;
+  margin: 0 0.1em;
+}
+.ct-legend .ct-variable .ct-swatch {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid white;
+  border-radius: 0.14em;
+}
+
+.ct-label {
+
+}
+
+/* Color Palette */
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut, .ct-series-a .ct-swatch {
+  background-color: skyblue;
+  stroke: skyblue;
+}
+.ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
+  fill: skyblue;
+}
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut, .ct-series-b .ct-swatch {
+  background-color: limegreen;
+  stroke: limegreen;
+}
+.ct-series-b .ct-area, .ct-series-b .ct-slice-pie {
+  fill: limegreen;
+}
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut, .ct-series-c .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-c .ct-area, .ct-series-c .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut, .ct-series-d .ct-swatch {
+  background-color: gold;
+  stroke: gold;
+}
+.ct-series-d .ct-area, .ct-series-d .ct-slice-pie {
+  fill: gold;
+}
+
+.ct-series-e .ct-bar, .ct-series-e .ct-line, .ct-series-e .ct-point, .ct-series-e .ct-slice-donut, .ct-series-e .ct-swatch {
+  background-color: orange;
+  stroke: orange;
+}
+.ct-series-e .ct-area, .ct-series-e .ct-slice-pie {
+  fill: orange;
+}
+
+.ct-series-f .ct-bar, .ct-series-f .ct-line, .ct-series-f .ct-point, .ct-series-f .ct-slice-donut, .ct-series-f .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-f .ct-area, .ct-series-f .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-g .ct-bar, .ct-series-g .ct-line, .ct-series-g .ct-point, .ct-series-g .ct-slice-donut, .ct-series-g .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-g .ct-area, .ct-series-g .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-h .ct-bar, .ct-series-h .ct-line, .ct-series-h .ct-point, .ct-series-h .ct-slice-donut, .ct-series-h .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-h .ct-area, .ct-series-h .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-i .ct-bar, .ct-series-i .ct-line, .ct-series-i .ct-point, .ct-series-i .ct-slice-donut, .ct-series-i .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-i .ct-area, .ct-series-i .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-j .ct-bar, .ct-series-j .ct-line, .ct-series-j .ct-point, .ct-series-j .ct-slice-donut, .ct-series-j .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-j .ct-area, .ct-series-j .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-k .ct-bar, .ct-series-k .ct-line, .ct-series-k .ct-point, .ct-series-k .ct-slice-donut, .ct-series-k .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-k .ct-area, .ct-series-k .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-l .ct-bar, .ct-series-l .ct-line, .ct-series-l .ct-point, .ct-series-l .ct-slice-donut, .ct-series-l .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-l .ct-area, .ct-series-l .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-m .ct-bar, .ct-series-m .ct-line, .ct-series-m .ct-point, .ct-series-m .ct-slice-donut, .ct-series-m .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-m .ct-area, .ct-series-m .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-n .ct-bar, .ct-series-n .ct-line, .ct-series-n .ct-point, .ct-series-n .ct-slice-donut, .ct-series-n .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-n .ct-area, .ct-series-n .ct-slice-pie {
+  fill: indianred;
+}
+
+.ct-series-o .ct-bar, .ct-series-o .ct-line, .ct-series-o .ct-point, .ct-series-o .ct-slice-donut, .ct-series-o .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-o .ct-area, .ct-series-o .ct-slice-pie {
+  fill: indianred;
+}
