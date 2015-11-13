@@ -8,8 +8,8 @@ co(function * () {
     var options = {
       width: 400,
       height: 200,
-      fullWidth: true, // adds vertical gridline on rightmost edge of chart
-      chartPadding: { right: 40 }, // ensures that `Friday` label is not cutoff
+      // fullWidth: true, // adds vertical gridline on rightmost edge of chart
+      // chartPadding: { right: 40 }, // ensures that `Friday` label is not cutoff
       axisX: {
         // position: 'start',
         title: 'X Axis (units)',
