@@ -1,7 +1,7 @@
 {
   "name": "node-chartist",
   "version": "0.1.0",
-  "description": "",
+  "description": "Functional server-side charts.",
   "main": "lib/index.js",
   "browserify": {
     "transform": [
@@ -20,9 +20,18 @@
     "ramda": "^0.18.0",
     "underscore.string": "^3.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "less": "^2.5.3",
+    "rimraf": "^2.4.3"
+  },
   "scripts": {
-    "test": "node test/index.js"
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean",
+    "build": "lessc lib/main.less dist/main.css",
+    "postinstall": "npm run build",
+    "pretest": "npm run build",
+    "test": "node test/index.js",
+    "watch": "watch 'npm run build' ./lib ./node_modules"
   },
   "author": "",
   "license": "MIT"

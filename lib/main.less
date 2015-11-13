@@ -1,0 +1,42 @@
+@import (less) 'node_modules/chartist/dist/chartist.min.css';
+
+// Legend
+.ct-legend {
+  margin-top: 1em;
+  .ct-variable {
+    display: inline-block;
+    margin: 0 0.1em;
+    .ct-swatch {
+      display: inline-block;
+      vertical-align: baseline;
+      margin-right: 0.3em;
+      width: 0.5em;
+      height: 0.5em;
+      border: 1px solid white;
+      border-radius: 0.14em;
+    }
+  }
+}
+
+// Color Palette
+.ct-series(@label, @color) {
+  .ct-series-@{label} {
+    .ct-bar, .ct-line, .ct-point, .ct-slice-donut, .ct-swatch { background-color: @color; stroke: @color; }
+    .ct-area, .ct-slice-pie { fill: @color; }
+  }
+}
+.ct-series(a, skyblue);
+.ct-series(b, limegreen);
+.ct-series(c, indianred);
+.ct-series(d, gold);
+.ct-series(e, orange);
+.ct-series(f, indianred);
+.ct-series(g, indianred);
+.ct-series(h, indianred);
+.ct-series(i, indianred);
+.ct-series(j, indianred);
+.ct-series(k, indianred);
+.ct-series(l, indianred);
+.ct-series(m, indianred);
+.ct-series(n, indianred);
+.ct-series(o, indianred);
