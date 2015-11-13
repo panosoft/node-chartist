@@ -1,6 +1,6 @@
 {
-  "name": "chartist-x",
-  "version": "1.0.0",
+  "name": "node-chartist",
+  "version": "0.0.0",
   "description": "",
   "main": "lib/index.js",
   "browserify": {
