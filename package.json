@@ -15,15 +15,14 @@
     "chartist-plugin-axistitle": "0.0.1",
     "co": "^4.6.0",
     "jsdom": "^7.0.2",
+    "less": "^2.5.3",
     "matchmedia": "^0.1.2",
     "promisify-node": "^0.2.1",
     "ramda": "^0.18.0",
+    "rimraf": "^2.4.3",
     "underscore.string": "^3.2.2"
   },
-  "devDependencies": {
-    "less": "^2.5.3",
-    "rimraf": "^2.4.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean",
