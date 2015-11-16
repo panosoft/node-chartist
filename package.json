@@ -23,13 +23,18 @@
     "touch": "^1.0.0",
     "underscore.string": "^3.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "cheerio": "^0.19.0",
+    "mocha": "^2.3.4"
+  },
   "scripts": {
     "prebuild": "rimraf dist/*",
     "build": "lessc lib/main.less dist/main.css",
     "postinstall": "npm run build && touch node_modules/canvas.js",
     "pretest": "npm run build",
-    "test": "node test/index.js",
+    "test": "mocha",
     "watch": "watch 'npm run build' ./lib ./node_modules"
   },
   "author": "",

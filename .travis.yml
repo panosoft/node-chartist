@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "stable"
+notifications:
+  email:
+    on_success: change
+    on_failure: always
