@@ -20,14 +20,14 @@
     "promisify-node": "^0.2.1",
     "ramda": "^0.18.0",
     "rimraf": "^2.4.3",
+    "touch": "^1.0.0",
     "underscore.string": "^3.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "clean": "rimraf dist/*",
-    "prebuild": "npm run clean",
+    "prebuild": "rimraf dist/*",
     "build": "lessc lib/main.less dist/main.css",
-    "postinstall": "npm run build",
+    "postinstall": "npm run build && touch node_modules/canvas.js",
     "pretest": "npm run build",
     "test": "node test/index.js",
     "watch": "watch 'npm run build' ./lib ./node_modules"
