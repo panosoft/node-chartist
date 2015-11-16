@@ -6,13 +6,15 @@ Functional server-side svg charts.
 
 Node Chartist is a functional server-side wrapper for the popular [Chartist](http://gionkunz.github.io/chartist-js/index.html) library. It generates static svg charts and adds support for a few useful features such as axis titles and chart legends.
 
-# installation
+# Installation
 
 ```sh
 npm install node-chartist
 ```
 
-# usage
+The accompanying CSS can be found at `dist/main.css` after installation.
+
+# Usage
 
 ```js
 const co = require('co');
@@ -23,8 +25,8 @@ co(function * () {
   const data = {
     labels: ['a','b','c','d','e'],
     series: [
-      [1,2,3,4,5],
-      [3,4,5,6,7]
+      [1, 2, 3, 4, 5],
+      [3, 4, 5, 6, 7]
     ]
   };
   const bar = yield generate('bar', options, data); //=> chart HTML
@@ -33,7 +35,7 @@ co(function * () {
 
 ```
 
-# api
+# API
 
 ## generate ( type , options , data )
 
@@ -62,7 +64,7 @@ __Arguments__
 
   - `labels` - An array of string labels to apply to each value.
 
-  - `series` - An array of arrays or objects containing the values to plot. If object are used, the following properties are supported:
+  - `series` - An array of arrays or objects containing the values to plot. If objects are used, the following properties are supported:
 
     - `name` - A string specifying the name of the series. The name will be used in the legend and will be set as the ct:series-name attribute on the series group.
 
@@ -76,27 +78,27 @@ __Arguments__
 
     ```js
     const data = {
-      labels: ['a','b','c','d','e'],
+      labels: ['a', 'b', 'c', 'd', 'e'],
       series: [
-        [1,2,3,4,5],
-        [3,4,5,6,7]
+        [1, 2, 3, 4, 5],
+        [3, 4, 5, 6, 7]
       ]
     };
     ```
 
     ```js
     const data = {
-      labels: ['a','b','c','d','e'],
+      labels: ['a', 'b', 'c', 'd', 'e'],
       series: [
-        {name: 'Series 1', value: [1,2,3,4,5]},
-        {name: 'Series 2', value: [3,4,5,6,7]}
+        {name: 'Series 1', value: [1, 2, 3, 4, 5]},
+        {name: 'Series 2', value: [3, 4, 5, 6, 7]}
       ]
     };
     ```
 
   For pie charts, this object contains the following properties:
 
-  - `series` - An array of values or objects containing values to plot. If object are used, the following properties are supported:
+  - `series` - An array of values or objects containing values to plot. If objects are used, the following properties are supported:
 
     - `name` - A string specifying the name of the series. The name will be used in the legend and will be set as the ct:series-name attribute on the series group.
 
@@ -137,10 +139,10 @@ co(function * () {
   };
 
   const bar = yield generate('bar', options, {
-    labels: ['a','b','c','d','e'],
+    labels: ['a', 'b', 'c', 'd', 'e'],
     series: [
-      {name: 'Series 1', value: [1,2,3,4,5]},
-      {name: 'Series 2', value: [3,4,5,6,7]}
+      {name: 'Series 1', value: [1, 2, 3, 4, 5]},
+      {name: 'Series 2', value: [3, 4, 5, 6, 7]}
     ]
   });
 })
@@ -158,10 +160,10 @@ co(function * () {
   };
 
   const line = yield generate('line', options, {
-    labels: ['a','b','c','d','e'],
+    labels: ['a', 'b', 'c', 'd', 'e'],
     series: [
-      {name: 'Series 1', value: [1,2,3,4,5]},
-      {name: 'Series 2', value: [3,4,5,6,7]}
+      {name: 'Series 1', value: [1, 2, 3, 4, 5]},
+      {name: 'Series 2', value: [3, 4, 5, 6, 7]}
     ]
   });
 })
