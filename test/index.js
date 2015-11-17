@@ -82,14 +82,25 @@ describe('generate', () => {
     }));
   });
   describe('legend', () => {
-    it('generated', () => co(function * () {
+    it('enabled by default', () => co(function * () {
       var name = 'Y Axis (units)';
-      var chart = yield generate('bar', {}, {
+      var options = {};
+      var chart = yield generate('bar', options, {
         labels: ['a', 'b', 'c'],
         series: [{ name, value: [1, 2, 3] }]
       });
       var $ = cheerio.load(chart);
       expect($('.ct-legend .ct-variable').length).to.equal(1);
+    }));
+    it('can be disabled', () => co(function * () {
+      var name = 'Y Axis (units)';
+      var options = { legend: false };
+      var chart = yield generate('bar', options, {
+        labels: ['a', 'b', 'c'],
+        series: [{ name, value: [1, 2, 3] }]
+      });
+      var $ = cheerio.load(chart);
+      expect($('.ct-legend').length).to.equal(0);
     }));
     it('variable excluded if nameless', () => co(function * () {
       var name = 'Y Axis (units)';

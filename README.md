@@ -55,7 +55,10 @@ __Arguments__
 - `options` - An object of chart options. Options are dependent on the chart `type`. All options in the [Chartist Api Documentation](http://gionkunz.github.io/chartist-js/api-documentation.html) are supported. In addition to those, the following options are supported by node-chartist:
 
   - `axisX.title` - A string to use as the x axis title.
+
   - `axisY.title` - A string to use as the y axis title.
+
+  - `legend` - A boolean used to determine whether a legend should be generated. Defaults to `true`.
 
 
 - `data` - An object containing data used to generate the chart. The structure of this object depends on chart `type`. Please refer to the [Chartist Api Documentation](http://gionkunz.github.io/chartist-js/api-documentation.html) for complete details.
