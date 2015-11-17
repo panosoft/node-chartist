@@ -1,6 +1,6 @@
 {
   "name": "node-chartist",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Functional server-side charts.",
   "main": "lib/index.js",
   "browserify": {
