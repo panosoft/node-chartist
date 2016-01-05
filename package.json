@@ -2,6 +2,9 @@
   "name": "node-chartist",
   "version": "0.2.4",
   "description": "Functional server-side charts.",
+  "engines": {
+    "node": "^4.0.0"
+  },
   "main": "lib/index.js",
   "browserify": {
     "transform": [
@@ -9,17 +12,17 @@
     ]
   },
   "dependencies": {
-    "@panosoft/ramda-utils": "^0.2.0",
-    "brfs": "^1.4.1",
-    "chartist": "^0.9.4",
+    "@panosoft/ramda-utils": "^0.2.5",
+    "brfs": "^1.4.2",
+    "chartist": "^0.9.5",
     "chartist-plugin-axistitle": "0.0.1",
     "co": "^4.6.0",
-    "jsdom": "^7.0.2",
+    "jsdom": "^7.2.2",
     "less": "^2.5.3",
     "matchmedia": "^0.1.2",
     "promisify-node": "^0.2.1",
     "ramda": "^0.18.0",
-    "rimraf": "^2.4.3",
+    "rimraf": "^2.5.0",
     "touch": "^1.0.0",
     "underscore.string": "^3.2.2"
   },
@@ -38,5 +41,5 @@
     "watch": "watch 'npm run build' ./lib ./node_modules"
   },
   "author": "",
-  "license": "MIT"
+  "license": "ISC"
 }
