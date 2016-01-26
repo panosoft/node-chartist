@@ -1,6 +1,6 @@
 {
   "name": "node-chartist",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Functional server-side charts.",
   "engines": {
     "node": "^4.0.0",
