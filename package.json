@@ -35,8 +35,8 @@
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
-    "build": "lessc lib/main.less dist/main.css",
-    "postinstall": "npm run build && touch node_modules/canvas.js",
+    "build": "lessc lib/main.less dist/main.css && touch node_modules/canvas.js",
+    "postinstall": "npm run build",
     "pretest": "npm run build",
     "test": "mocha",
     "watch": "watch 'npm run build' ./lib ./node_modules"
