@@ -19,7 +19,7 @@
     "chartist-plugin-axistitle": "0.0.1",
     "co": "^4.6.0",
     "jsdom": "^7.2.2",
-    "less": "^2.5.3",
+    "less": "^2.7.1",
     "matchmedia": "^0.1.2",
     "promisify-node": "^0.2.1",
     "ramda": "^0.18.0",
@@ -36,7 +36,6 @@
   "scripts": {
     "prebuild": "rimraf dist/*",
     "build": "lessc lib/main.less dist/main.css && touch node_modules/canvas.js",
-    "postinstall": "npm run build",
     "pretest": "npm run build",
     "test": "mocha",
     "watch": "watch 'npm run build' ./lib ./node_modules"
