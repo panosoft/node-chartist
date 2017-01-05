@@ -1,11 +1,13 @@
-var cheerio = require('cheerio');
-var co = require('co');
-var expect = require('chai')
+const cheerio = require('cheerio');
+const co = require('co');
+const expect = require('chai')
   .use(require('chai-as-promised'))
+  .use(require('sinon-chai'))
   .expect;
-var generate = require('../lib');
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs');
+const generate = require('../lib');
+const path = require('path');
+const sinon = require('sinon');
 
 var exists = path => new Promise((resolve, reject) => {
   fs.stat(path, (error) => {
@@ -57,6 +59,33 @@ describe('generate', () => {
       expect(generate('spider', {}, {})).to.eventually.be.rejectedWith(TypeError, /Unsupported chart type/)
     );
   });
+    describe('options', () => {
+        it('object', () => co(function * () {
+            var chart = yield generate('bar', {}, {
+                labels: ['a', 'b', 'c'],
+                series: [[1, 2, 3]]
+            });
+            var $ = cheerio.load(chart);
+            expect($('svg.ct-chart-bar').length).to.equal(1);
+        }));
+        it('function called with Chartist object', () => co(function * () {
+            const options = sinon.stub().returns({});
+            var chart = yield generate('bar', options, {
+                labels: ['a', 'b', 'c'],
+                series: [[1, 2, 3]]
+            });
+            expect(options).to.be.calledOnce
+                .and.calledWith(sinon.match.has('AutoScaleAxis'));
+        }));
+        it('function must return object', () => {
+            const options = (Chartist) => null;
+            var chart = generate('bar', options, {
+                labels: ['a', 'b', 'c'],
+                series: [[1, 2, 3]]
+            });
+            return expect(chart).to.eventually.be.rejectedWith(TypeError);
+        });
+    });
   describe('axisTitle', () => {
     it('x axis', () => co(function * () {
       var title = 'X Axis (units)';

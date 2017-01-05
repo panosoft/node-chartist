@@ -21,6 +21,8 @@ const co = require('co');
 const generate = require('node-chartist');
 
 co(function * () {
+
+  // options object
   const options = {width: 400, height: 200};
   const data = {
     labels: ['a','b','c','d','e'],
@@ -30,9 +32,20 @@ co(function * () {
     ]
   };
   const bar = yield generate('bar', options, data); //=> chart HTML
-})
 
 
+  // options function
+  const options = (Chartist) => ({width: 400, height: 200, axisY: { type: Chartist.FixedScaleAxis } });
+  const data = {
+    labels: ['a','b','c','d','e'],
+    series: [
+      [1, 2, 3, 4, 5],
+      [3, 4, 5, 6, 7]
+    ]
+  };
+  const bar = yield generate('bar', options, data); //=> chart HTML
+
+});
 ```
 
 # API
@@ -52,7 +65,9 @@ __Arguments__
   - `pie`
 
 
-- `options` - An object of chart options. Options are dependent on the chart `type`. All options in the [Chartist Api Documentation](http://gionkunz.github.io/chartist-js/api-documentation.html) are supported. In addition to those, the following options are supported by node-chartist:
+- `options` - An object or a function that returns an object of chart options. If a function is used, it will be called with the `Chartist` object.
+
+    Options are dependent on the chart `type`. All options in the [Chartist Api Documentation](http://gionkunz.github.io/chartist-js/api-documentation.html) are supported. In addition to those, the following options are supported by node-chartist:
 
   - `axisX.title` - A string to use as the x axis title.
 
