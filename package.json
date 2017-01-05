@@ -2,6 +2,8 @@
   "name": "node-chartist",
   "version": "1.0.0",
   "description": "SVG Charts on the server.",
+  "author": "",
+  "license": "Unlicense",
   "main": "lib/index.js",
   "browserify": {
     "transform": [
@@ -41,7 +43,5 @@
     "pretest": "npm run build",
     "test": "mocha",
     "watch": "watch 'npm run build' ./lib ./node_modules"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
