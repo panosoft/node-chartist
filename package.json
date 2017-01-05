@@ -1,7 +1,7 @@
 {
   "name": "node-chartist",
   "version": "1.0.0",
-  "description": "Functional server-side charts.",
+  "description": "SVG Charts on the server.",
   "main": "lib/index.js",
   "browserify": {
     "transform": [

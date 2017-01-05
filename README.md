@@ -1,6 +1,6 @@
 # node-chartist
 
-Functional server-side svg charts.
+> SVG Charts on the server.
 
 [![Travis](https://img.shields.io/travis/panosoft/node-chartist.svg)](https://travis-ci.org/panosoft/node-chartist)
 
