@@ -13,29 +13,26 @@
   "dependencies": {
     "@panosoft/ramda-utils": "^0.2.8",
     "brfs": "^1.4.3",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.3.0",
     "chartist": "^0.11.0",
     "chartist-plugin-axistitle": "0.0.1",
     "co": "^4.6.0",
     "is_js": "^0.9.0",
-    "jsdom": "^10.0.0",
-    "less": "^2.7.1",
+    "jsdom": "^9.0.0",
     "matchmedia": "^0.1.2",
-    "mocha": "^2.5.3",
     "promisify-node": "^0.2.1",
     "ramda": "^0.18.0",
-    "rimraf": "^2.5.3",
-    "touch": "^1.0.0",
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.1.0",
     "cheerio": "^0.19.0",
+    "less": "^2.7.1",
     "mocha": "^2.3.4",
+    "rimraf": "^2.5.3",
     "sinon": "^1.17.7",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "touch": "^1.0.0"
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
