@@ -23,6 +23,10 @@
   font-size: .75rem;
   line-height: 1;
 }
+.ct-grid-background,
+.ct-line {
+  fill: none;
+}
 .ct-chart-bar .ct-label,
 .ct-chart-line .ct-label {
   display: block;
@@ -31,6 +35,10 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+.ct-chart-donut .ct-label,
+.ct-chart-pie .ct-label {
+  dominant-baseline: central;
 }
 .ct-label.ct-horizontal.ct-start {
   -webkit-box-align: flex-end;
@@ -162,7 +170,6 @@
   stroke-linecap: round;
 }
 .ct-line {
-  fill: none;
   stroke-width: 4px;
 }
 .ct-area {
@@ -184,6 +191,7 @@
   stroke: #d70206;
 }
 .ct-series-a .ct-area,
+.ct-series-a .ct-slice-donut-solid,
 .ct-series-a .ct-slice-pie {
   fill: #d70206;
 }
@@ -194,6 +202,7 @@
   stroke: #f05b4f;
 }
 .ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
 .ct-series-b .ct-slice-pie {
   fill: #f05b4f;
 }
@@ -204,6 +213,7 @@
   stroke: #f4c63d;
 }
 .ct-series-c .ct-area,
+.ct-series-c .ct-slice-donut-solid,
 .ct-series-c .ct-slice-pie {
   fill: #f4c63d;
 }
@@ -214,6 +224,7 @@
   stroke: #d17905;
 }
 .ct-series-d .ct-area,
+.ct-series-d .ct-slice-donut-solid,
 .ct-series-d .ct-slice-pie {
   fill: #d17905;
 }
@@ -224,6 +235,7 @@
   stroke: #453d3f;
 }
 .ct-series-e .ct-area,
+.ct-series-e .ct-slice-donut-solid,
 .ct-series-e .ct-slice-pie {
   fill: #453d3f;
 }
@@ -234,6 +246,7 @@
   stroke: #59922b;
 }
 .ct-series-f .ct-area,
+.ct-series-f .ct-slice-donut-solid,
 .ct-series-f .ct-slice-pie {
   fill: #59922b;
 }
@@ -244,6 +257,7 @@
   stroke: #0544d3;
 }
 .ct-series-g .ct-area,
+.ct-series-g .ct-slice-donut-solid,
 .ct-series-g .ct-slice-pie {
   fill: #0544d3;
 }
@@ -254,6 +268,7 @@
   stroke: #6b0392;
 }
 .ct-series-h .ct-area,
+.ct-series-h .ct-slice-donut-solid,
 .ct-series-h .ct-slice-pie {
   fill: #6b0392;
 }
@@ -264,6 +279,7 @@
   stroke: #f05b4f;
 }
 .ct-series-i .ct-area,
+.ct-series-i .ct-slice-donut-solid,
 .ct-series-i .ct-slice-pie {
   fill: #f05b4f;
 }
@@ -274,6 +290,7 @@
   stroke: #dda458;
 }
 .ct-series-j .ct-area,
+.ct-series-j .ct-slice-donut-solid,
 .ct-series-j .ct-slice-pie {
   fill: #dda458;
 }
@@ -284,6 +301,7 @@
   stroke: #eacf7d;
 }
 .ct-series-k .ct-area,
+.ct-series-k .ct-slice-donut-solid,
 .ct-series-k .ct-slice-pie {
   fill: #eacf7d;
 }
@@ -294,6 +312,7 @@
   stroke: #86797d;
 }
 .ct-series-l .ct-area,
+.ct-series-l .ct-slice-donut-solid,
 .ct-series-l .ct-slice-pie {
   fill: #86797d;
 }
@@ -304,6 +323,7 @@
   stroke: #b2c326;
 }
 .ct-series-m .ct-area,
+.ct-series-m .ct-slice-donut-solid,
 .ct-series-m .ct-slice-pie {
   fill: #b2c326;
 }
@@ -314,6 +334,7 @@
   stroke: #6188e2;
 }
 .ct-series-n .ct-area,
+.ct-series-n .ct-slice-donut-solid,
 .ct-series-n .ct-slice-pie {
   fill: #6188e2;
 }
@@ -324,6 +345,7 @@
   stroke: #a748ca;
 }
 .ct-series-o .ct-area,
+.ct-series-o .ct-slice-donut-solid,
 .ct-series-o .ct-slice-pie {
   fill: #a748ca;
 }
