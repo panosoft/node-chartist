@@ -75,6 +75,10 @@ __Arguments__
 
   - `legend` - A boolean used to determine whether a legend should be generated. Defaults to `true`.
 
+  - `wrapHtml` - A boolean used to determine whether a `<div>` wrapping the SVG should be generated. Defaults to `true`.
+
+  - A pure SVG will be generated if set both `legend` and `wrapHtml` to `false`.
+
 
 - `data` - An object containing data used to generate the chart. The structure of this object depends on chart `type`. Please refer to the [Chartist Api Documentation](http://gionkunz.github.io/chartist-js/api-documentation.html) for complete details.
 
