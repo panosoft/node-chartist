@@ -92,6 +92,8 @@ __Arguments__
 
     - `meta` - Meta data is serialized and written to a ct:meta attribute on the series group.
 
+- `divWrap` - A boolean, if set to `true` returns svg wrapped inside a div. If set to `false`, returns pure svg without any wrapping div. By default it is set to `true`.
+
     Examples:
 
     ```js
@@ -162,7 +164,7 @@ co(function * () {
       {name: 'Series 1', value: [1, 2, 3, 4, 5]},
       {name: 'Series 2', value: [3, 4, 5, 6, 7]}
     ]
-  });
+  }/* ,true/false (divWrap) */);
 })
 ```
 
@@ -183,7 +185,7 @@ co(function * () {
       {name: 'Series 1', value: [1, 2, 3, 4, 5]},
       {name: 'Series 2', value: [3, 4, 5, 6, 7]}
     ]
-  });
+  }/* ,true/false (divWrap) */);
 })
 ```
 
@@ -198,6 +200,6 @@ co(function * () {
       {name: 'Series 1', value: 15 },
       {name: 'Series 2', value: 25 }
     ]
-  });
+  }/* ,true/false (divWrap) */);
 })
 ```
